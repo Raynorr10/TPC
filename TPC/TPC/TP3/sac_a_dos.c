@@ -26,3 +26,15 @@ i--;
 double depassement = sac_rempli-pMax;
 assert(depassement<= poids[i]);
 valBorneSup -= (long) ceil (((double) vals[i])*depassement/((double) poids[i]));
+
+/* old version */
+long best_ever = 0;
+opt[0][poids[0]] = vals[0];
+for (i = 1; i<n; i++){
+    for(j = 0;j<poids[i]; j++){
+        opt[i][j] = opt[i-1][j];
+    }
+    for(j=poids[i]; j<= pMax;j++){
+        if(opt[i][j])
+    }
+}
